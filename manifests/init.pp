@@ -17,6 +17,7 @@ class selenium(
   $nocheckcertificate  = false,
   $manage_logrotate    = true,
   $manage_installation = true,
+  $manage_service      = true
 ) inherits selenium::params {
   validate_string($user)
   validate_string($group)
